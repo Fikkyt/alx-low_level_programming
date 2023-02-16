@@ -1,4 +1,4 @@
-#include <stdio.hi>
+#include <stdio.h>
 /**
  * main - The starting point
  * the shows the use of puts()
