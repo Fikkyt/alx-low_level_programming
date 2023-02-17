@@ -1,4 +1,4 @@
-#include <stdio.h>>
+#include <stdio.h>
 /**
  * main - entry point
  * The programme gives random out and print out the result using if statement
@@ -11,7 +11,7 @@ int main(void)
 	m = 'a';
 	while (m <= 'z')
 	{
-		putchar(m"\n");
+		putchar(m "\n");
 		m++
 	}
 }
