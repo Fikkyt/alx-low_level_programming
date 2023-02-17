@@ -11,7 +11,7 @@ int main(void)
 
 	for (f = 0; f < 10; f++)
 	{
-		putchar("%c", f);
+		putchar(f);
 	}
 	putchar('\n');
 	return (0);
