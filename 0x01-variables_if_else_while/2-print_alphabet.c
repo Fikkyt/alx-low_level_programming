@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - entry point
  * The programme gives random out and print out the result using if statement
