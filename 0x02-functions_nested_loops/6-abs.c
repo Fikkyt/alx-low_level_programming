@@ -5,7 +5,7 @@
  * @int: data type integer as input
  * Return: 0
  */
-int _abs(int)
+int _abs(int n)
 {
 	int n;
 
