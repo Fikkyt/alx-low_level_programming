@@ -14,11 +14,22 @@ void times_table(void)
 		for (n = 0; n <= 9; n++)
 		{
 			k = m * n;
-			_putchar((k / 10) + '0');
-			_purchar((k % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
+			tens = k / 10;
+			unit = k % 10;
+			if (k < 10)
+			{
+				_putchar(unit + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar(tens + '0');
+				_putchar(unit + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
-	}
+	}}
 }
