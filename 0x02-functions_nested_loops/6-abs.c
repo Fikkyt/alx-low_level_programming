@@ -3,12 +3,11 @@
  * _abs - the entry point
  * Description: the function prints absolute values
  * @int: data type integer as input
+ * @n: the placeholder
  * Return: 0
  */
-int _abs(int)
+int _abs(int n)
 {
-	int n;
-
 	if (n > 0)
 	{
 		_putchar(n);
@@ -19,7 +18,7 @@ int _abs(int)
 	}
 	else
 	{
-		_putchar(('n * -1') + '0');
+		_putchar(-n);
 	}
 	return (0);
 }
