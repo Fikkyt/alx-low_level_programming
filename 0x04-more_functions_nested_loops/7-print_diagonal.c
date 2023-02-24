@@ -17,7 +17,7 @@ void print_diagonal(int n)
 			{
 				if (b == 0)
 				{
-					continue;
+					break;
 				}
 				else
 				{
