@@ -7,13 +7,16 @@
 */
 void more_numbers(void)
 {
-	char c, product;
+	char c, a;
 
 	c = 0;
-	for (; c <= 14; c++)
+	for (; c <= 10; c++)
 	{
-		product = c * 10;
-		_putchar(product + '0');
+		for (a = 0; a <= 14; a++)
+		{
+		_putchar(a + '0');
+		}
+	_putchar('\n');
 	}
 	_putchar('\n')
 }
