@@ -13,9 +13,9 @@ void more_numbers(void)
 	c = 0;
 	for (; c <= 9; c++)
 	{
-		m = a;
 		for (a = 0; a <= 14; a++)
 		{
+			m = a;
 			if (a > 9)
 			{
 				_putchar('1');
