@@ -8,16 +8,21 @@
 void more_numbers(void)
 {
 	int c;
-	char a;
+	char a, m;
 
 	c = 0;
-	for (; c <= 10; c++)
+	for (; c <= 9; c++)
 	{
+		m = a;
 		for (a = 0; a <= 14; a++)
 		{
-		_putchar(a + '0');
+			if (a > 9)
+			{
+				_putchar('1');
+				m = a % 10;
+			}
+			_putchar('0' + m);
 		}
-	_putchar('\n');
+		_putchar('\n');
 	}
-	_putchar('\n')
 }
