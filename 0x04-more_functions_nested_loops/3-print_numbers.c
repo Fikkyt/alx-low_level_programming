@@ -8,9 +8,9 @@ void print_numbers(void);
 {
 	int m;
 
-	if (m >= 48 && m <= 57)
+	for (m = 48;  m <= 57; m++)
 	{
-		_putchar('\n');
-		return (0);
+		_putchar(m + '0');
 	}
+	_putchar('\n');
 }
