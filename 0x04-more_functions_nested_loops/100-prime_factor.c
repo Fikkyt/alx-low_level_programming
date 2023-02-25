@@ -19,7 +19,7 @@ int main(void)
 		}
 		divisor++;
 	}
-	printf(" Largest prime factor: %lnd\n", largest_prime);
+	printf(" Largest prime factor: %ld\n", largest_prime);
 	return (0);
 }
 
