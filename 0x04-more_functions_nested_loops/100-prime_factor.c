@@ -17,7 +17,7 @@ int main(void)
 			num = num / divisor;
 			largest_prime = divisor;
 		}
-		divisor++;
+		divisor += 1;
 	}
 	printf(" Largest prime factor: %ld\n", largest_prime);
 	return (0);
