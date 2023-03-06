@@ -12,14 +12,7 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			if ((a[i][j] == 'a') || (a[i][j] <= 'z'))
-			{
-					_putchar(a[i][j]);
-			}
-			else if (a[i][j] == ' ')
-				_putchar(' ');
-			else if (a[i][j] == 'A' || a[i][j] <= 'Z')
-				_putchar(a[i][j]);
+			_putchar(a[i][j]);
 		}
 		_putchar('\n');
 	}
