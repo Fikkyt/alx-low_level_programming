@@ -25,7 +25,7 @@ int check_sqrt(int num, int y)
  */
 int _sqrt_recursion(int n)
 {
-	int y = 0;
+	int y = -1;
 
 	if (n == 0)
 		return (0);
