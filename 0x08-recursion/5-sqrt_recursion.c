@@ -1,39 +1,37 @@
 #include "main.h"
 /**
- * root_checker - the function finds the root of a number
- * @num: the required number
- * @root: the expected root
- * Return: 0
+ * check_sqrt - the function checks gthe square root of a number n
+ * @num: the integer number to be find its square root
+ * @y: update the multiplier of y by increment
+ * Return: the sqrt
  */
-int root_checker(int num, int root)
+int check_sqrt(int num, int y)
 {
-	if (root * root == num)
+	if (num == 0)
 	{
-		return (root);
+		return (0);
 	}
-	if (root == num / 2)
+	if (num < 0)
 	{
 		return (-1);
 	}
-	return (root_checker(num, root + 1));
+	return ((1 +  check_sqrt((num - 1) - (2 * (y + 1)))));
 }
 /**
- * _sqrt_recursion - the function that returns the
- * natural square root of a number.
- * @n: the required number whose root is to be find
- * Return: 0
+ * _sqrt_recursion - the function that returns
+ * the natural square root of a number
+ * @n: the number to find its square root
+ * Return: the check_sqrt
  */
 int _sqrt_recursion(int n)
 {
-	int root = 0;
+	int y = 0;
 
-	if (n < 0)
-	{
-		return (-1);
-	}
+	if (n == 0)
+		return (0);
 	if (n == 1)
-	{
 		return (1);
-	}
-	return ((root_checker(n, root)));
+	if (n < 0)
+		return (-1);
+	return (check_sqrt(n, y));
 }
