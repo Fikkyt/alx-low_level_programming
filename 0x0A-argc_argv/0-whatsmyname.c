@@ -8,7 +8,7 @@
  * @argv: a vector arguemnt that contains a string of argument passed
  * Return: 0 or exit(EXIT_SUCCESSS)
  */
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 	int i = 0;
 
