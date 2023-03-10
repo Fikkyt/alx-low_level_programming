@@ -12,6 +12,6 @@ int main(int argc, char *argv[])
 {
 	int i = 0;
 
-	printf("The name of the programme is: %s", argv[i]);
+	printf("The name of the programme is: %s\n", argv[i]);
 	return (0);
 }
