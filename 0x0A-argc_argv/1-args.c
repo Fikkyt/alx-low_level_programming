@@ -8,5 +8,5 @@
  */
 int main(int argc, char *argv)
 {
-	printf("%d", argc);
+	printf("%d\n", argc);
 }
