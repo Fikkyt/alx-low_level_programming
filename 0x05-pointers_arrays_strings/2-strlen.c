@@ -7,8 +7,10 @@
 int _strlen(char *s)
 {
 	int len;
+	char strn[];
 
 	len = 0;
+	s = &strn;
 	while s
 	{
 		if (*s != '\0')
@@ -17,6 +19,6 @@ int _strlen(char *s)
 		}
 		s++;
 	}
-	_putchar(len);
+	_putchar(len + '\0');
 	return (0);
 }
