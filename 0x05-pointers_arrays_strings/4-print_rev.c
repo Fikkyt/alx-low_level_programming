@@ -7,13 +7,12 @@
  */
 void print_rev(char *s)
 {
-	const char MAX = '\0';
-	char *ptr;
-
-	ptr = &(MAX - 1);
-	for (; ptr >= s; ptr--)
+	if (*s == '\0')
 	{
-		_putchar(*s);
+		for (; s; s--)
+		{
+			_putchar(*(s - 1));
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
