@@ -20,13 +20,4 @@ void puts_half(char *str)
 		}
 		_putchar('\n');
 	}
-	else if (len % 2 != 0)
-	{
-		index = (len - 1) / 2;
-		for (; str[index] != '\0'; index++)
-		{
-			_putchar(str[index]);
-		}
-		_putchar('\n');
-	}
 }
