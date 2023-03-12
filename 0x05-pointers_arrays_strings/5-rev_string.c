@@ -14,7 +14,7 @@ void rev_string(char *s)
 	{
 		if (*s != '\0')
 		{
-			s = s[i];
+			*s = s[i];
 		}
 	}
 }
