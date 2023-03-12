@@ -7,36 +7,15 @@
  */
 void puts_half(char *str)
 {
-	int len = 0;
+	int len, index, half;
 
-	/**
-	 * to calculate the length of the string
-	 */
-	for (; *str != '\0'; str++)
+	for (len = 0; s[len] != '\0'; len++)
+		;
+	index = (len / 2);
+	half = len / 2;
+	while (half--)
 	{
-		len++;
+		s[index];
+		index++;
 	}
-	/**
-	 * if the length is even
-	 */
-	if (len % 2 == 0)
-	{
-		for (; ((len / 2) >= 0); len--, str--)
-		{
-			if (*str != '\0')
-			{
-				_putchar(*str)
-			}
-		}
-	}
-	else if (len % 2 != 0)
-	{
-		n = (len - 1) / 2;
-		str = &n;
-		if (*str != '\0')
-		{
-			_putchar(*str);
-		}
-	}
-	_putchar('\n');
 }
