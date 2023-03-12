@@ -4,7 +4,7 @@
  * the terminating null byte (\0), to the buffer pointed to by dest
  * @dest: the destination string to copy to
  * @src: the source string to copy from
- * Return: dest 
+ * Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {
