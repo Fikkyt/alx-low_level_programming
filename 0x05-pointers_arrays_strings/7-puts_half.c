@@ -24,7 +24,10 @@ void puts_half(char *str)
 	{
 		for (; str[index] != '\0'; index++)
 		{
-			_putchar(str[index + 1]);
+			if (str[index] != '\0')
+			{
+				_putchar(str[index + 1]);
+			}
 		}
 		_putchar('\n');
 	}
