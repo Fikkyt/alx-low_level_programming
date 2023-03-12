@@ -22,12 +22,10 @@ void puts_half(char *str)
 	}
 	else if (len % 2 != 0)
 	{
+		index = (len - 1) / 2;
 		for (; str[index] != '\0'; index++)
 		{
-			if (str[index] != '\0')
-			{
-				_putchar(str[index + 1]);
-			}
+			_putchar(str[index]);
 		}
 		_putchar('\n');
 	}
